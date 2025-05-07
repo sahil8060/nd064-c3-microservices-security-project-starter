@@ -40,10 +40,10 @@ Vagrant.configure("2") do |config|
       sudo zypper --non-interactive install apparmor-parser
 
       # Install Docker
-      zypper --non-interactive install docker
-      systemctl enable docker
-      usermod -G docker -a $USER
-      systemctl restart docker
+      # zypper --non-interactive install docker
+      # systemctl enable docker
+      # usermod -G docker -a $USER
+      # systemctl restart docker
 
       # Install kubectl
       curl -LO "https://dl.k8s.io/release/v1.32.2/bin/linux/amd64/kubectl"
